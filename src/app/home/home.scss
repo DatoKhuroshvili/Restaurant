@@ -1,0 +1,119 @@
+.firstcontainer {
+  width: 100%;
+  height: 700px;
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(252, 244, 241, 0.95) 0%,
+      rgba(252, 244, 241, 0.9) 30%,
+      rgba(252, 244, 241, 0.6) 45%,
+      rgba(252, 244, 241, 0.2) 55%,
+      rgba(252, 244, 241, 0) 65%
+    ),
+    url("/firstcontainer/Rightside.jpg");
+
+  background-size: cover;       
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .firstcontainerinner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .leftside {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftsideinner {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+
+    .caption  {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        h1 {
+      font-family: "Playfair Display", serif;
+      color: #3b2f2f;
+      line-height: 1.8; 
+      
+      }
+      .paragraphs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p{
+            display: flex;
+            gap: 20px;
+        
+        font-size: 23px;
+        }
+      }
+
+    }
+
+    .button {
+        width: 100%;
+         button {
+      width: 300px;
+      height: 60px;
+      border-radius: 50px;
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+        border: none;
+      background-color: #bd976a;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 24px;
+      color: white;
+      } 
+    }
+
+    .button button:hover {
+      background-color: #6d584b;
+      color: white;
+    }
+  }
+}
+
+.secondcontainer {
+    margin-top: 40px;
+       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+    .secondcontainerinner {
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+         border-top: 1px solid #8b6e59;
+         height: 100%;
+         padding: 0 20px;
+                  border-bottom: 1px solid #8b6e59;
+
+
+
+        .card {
+            height: 280px;
+             width: 440px;  
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
