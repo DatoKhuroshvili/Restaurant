@@ -9,6 +9,7 @@ import { Footer } from './footer/footer';
 import { Services } from './services/services';
 import { Menu } from './menu/menu';
 import { Contact } from './contact/contact';
+import { Aboutus } from './aboutus/aboutus';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Contact } from './contact/contact';
     Footer,
     Services,
     Menu,
-    Contact
+    Contact,
+    Aboutus
   ],
   imports: [
     BrowserModule,

@@ -4,9 +4,11 @@ import { Home } from './home/home';
 import { Menu } from './menu/menu';
 import { Services } from './services/services';
 import { Contact } from './contact/contact';
+import { Aboutus } from './aboutus/aboutus';
 
 
 const routes: Routes = [
+
   {
     path: "",
     component : Home
@@ -22,6 +24,10 @@ const routes: Routes = [
   {
     path : "Contact",
     component : Contact
+  },
+  {
+    path : "aboutus",
+    component : Aboutus
   }
 
 
