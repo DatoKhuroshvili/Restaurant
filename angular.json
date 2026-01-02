@@ -14,29 +14,6 @@
           "style": "scss",
           "skipTests": true,
           "standalone": false
-        },
-        "@schematics/angular:class": {
-          "skipTests": true
-        },
-        "@schematics/angular:directive": {
-          "skipTests": true,
-          "standalone": false
-        },
-        "@schematics/angular:guard": {
-          "skipTests": true
-        },
-        "@schematics/angular:interceptor": {
-          "skipTests": true
-        },
-        "@schematics/angular:pipe": {
-          "skipTests": true,
-          "standalone": false
-        },
-        "@schematics/angular:resolver": {
-          "skipTests": true
-        },
-        "@schematics/angular:service": {
-          "skipTests": true
         }
       },
       "root": "",
@@ -44,43 +21,23 @@
       "prefix": "app",
       "architect": {
         "build": {
-  "builder": "@angular/build:application",
+          "builder": "@angular/build:application",
           "options": {
-    "browser": "src/main.ts",
-    "tsConfig": "tsconfig.app.json",
-    "inlineStyleLanguage": "scss",
+            "browser": "src/main.ts",
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              { "glob": "**/*", "input": "public" }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
-        
-            "outputMode": "static"
-          
+            "styles": ["src/styles.scss"]
           },
           "configurations": {
             "production": {
               "budgets": [
-                {
-                   "type": "initial",
-                   "maximumWarning": "500kb",
-                    "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                 "maximumWarning": "10kb",
-                 "maximumError": "20kb"
-}
-                
+                { "type": "initial", "maximumWarning": "500kb", "maximumError": "1MB" },
+                { "type": "anyComponentStyle", "maximumWarning": "10kb", "maximumError": "20kb" }
               ],
-             "outputHashing": "all",
-              "ssr": false
-         
-              
+              "outputHashing": "all"
             },
             "development": {
               "optimization": false,
@@ -93,12 +50,8 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
-            "production": {
-              "buildTarget": "rest:build:production"
-            },
-            "development": {
-              "buildTarget": "rest:build:development"
-            }
+            "production": { "buildTarget": "rest:build:production" },
+            "development": { "buildTarget": "rest:build:development" }
           },
           "defaultConfiguration": "development"
         }
