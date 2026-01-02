@@ -1,7 +1,3 @@
-* {
-    color: #8B6E59;
-}
-
 
 .Menucontainer {
     width: 100% ;
@@ -12,7 +8,9 @@
     .menuinner {
         border: 1px solid #8B6E59;
         .caption {
-            background-color: #8B6E59;
+            h1{
+           color: black ;
+           }
             display: flex;
             justify-content: center;
             width: 100%;

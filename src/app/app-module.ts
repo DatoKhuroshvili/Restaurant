@@ -10,6 +10,8 @@ import { Services } from './services/services';
 import { Menu } from './menu/menu';
 import { Contact } from './contact/contact';
 import { Aboutus } from './aboutus/aboutus';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { Aboutus } from './aboutus/aboutus';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

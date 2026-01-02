@@ -1,0 +1,71 @@
+<form (ngSubmit)="sendEmail(f)" #f="ngForm" class="contact-form">
+<div class="formcontainer">
+    <div class="formcontainerinner">
+  <div class="form-group">
+    <label for="first_name">Имя</label>
+    <input
+      type="text"
+      id="first_name"
+      name="first_name"
+      [(ngModel)]="formData.first_name"
+      placeholder="Введите ваше имя"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="last_name">Фамилия</label>
+    <input
+      type="text"
+      id="last_name"
+      name="last_name"
+      [(ngModel)]="formData.last_name"
+      placeholder="Введите вашу фамилию"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Телефон</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      [(ngModel)]="formData.phone"
+      placeholder="Введите ваш номер"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      [(ngModel)]="formData.email"
+      placeholder="Введите ваш email"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="message">Сообщение</label>
+    <textarea
+      id="message"
+      name="message"
+      [(ngModel)]="formData.message"
+      placeholder="Введите ваше сообщение"
+      required
+    ></textarea>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" [disabled]="f.invalid">
+      Отправить
+    </button>
+  </div>
+</div>
+</div>
+</form>
+
